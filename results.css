@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+header{
+    background-color: rgba(144, 238, 144, 0.3);
+    height: 15vh;
+}
+
+.logo{
+    width: 120px;
+    padding-left: 10px;
+}
+
+#rezumat{
+    color: cadetblue;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+
+.youKnowThis h2{
+    display: inline;
+position: relative;
+top: -75px;
+left: 10%;
+color: green;
+font-family: "Montserrat", sans-serif;
+font-weight: 300;
+}
+
+
+
+.fa-home{
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+
+.homeButton{
+    margin: 0px 20px 18px 0px;
+    outline: none;
+    background-color: rgba(0, 0, 134, 0.7);
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    bottom: 3.5px;
+    width: 35px;
+    float: right;
+    margin-top: 10px;
+  }
+  
+.securityOptionsText{
+    position: relative;
+    top: 22px;
+    left: -15%;
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+    color: forestgreen;
+    font-weight: 400;
+    width: 15%;
+}
+
+a{
+    display: block;
+    color: cadetblue;
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+h1{
+    display: block;
+    color: rgb(64, 135, 175);
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+
+#rezumatText{
+    font-family: "Montserrat", sans-serif;
+    color: cadetblue;
+    left: 30%;
+    display: block;
+    position: relative;
+    top: -85px;
+}
+
+.logoRezumat img{
+  padding: 10px;
+}
+
+#rezumatP{
+    font-family: "Montserrat", sans-serif;
+    color: cadetblue;
+    left: 30%;
+    display: block;
+    position: relative;
+    top: -75px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+
+
+main{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.section1{
+     border: 2px solid cadetblue;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.section2{
+    border: 2px solid cadetblue;
+      margin-top: 10px;
+      border-radius: 5px;
+      margin-left: 10px;
+      margin-right: 10px;
+}
+
+.logoRezumat img{
+    width: 100px;
+}
+
+.securityOptions{
+    position: relative;
+    top: -120px;
+    left:70%;
+}
+
+.fa-question-circle{
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .helpButton{
+    margin: 0px 20px 18px 0px;
+    outline: none;
+    background-color:  rgba(0, 0, 134, 0.7);
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    bottom: 3.5px;
+    width: 35px;
+  float: right;
+  margin-top: 10px;
+  }
+  
+

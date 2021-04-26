@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box1{
+    background-color: lightblue;
+}
+
+.box2{
+    background-color: lightgreen;
+}
+
+.box3{
+    background-color: #3cc761;
+}
+
+main{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.35fr 1fr;
+    grid-template-rows: 1fr 0.2fr;
+}
+
+.box2{
+    grid-row: 1/3;
+}
+
+div.box2 h1{
+ font-family: "Comic Neue", sans-serif;
+ font-size: 21px;
+ margin: 15px;
+ color: #fff;
+ font-weight: 200;
+}
+
+div.box1 h1{
+  font-family: "Comic Neue", sans-serif;
+  font-size: 21px;
+  margin: 15px;
+  color: #fff;
+  font-weight: 200;
+
+  
+}
+
+
+
+div.box1 h2{
+  font-family: "Comic Neue", sans-serif;
+  font-size: 21px;
+  margin: 15px;
+  color: #fff;
+  font-weight: 400;
+
+}
+
+
+div.box2 h3{
+  font-family: "Comic Neue", sans-serif;
+  font-size: 18px;
+  margin: 15px;
+  color: #fff;
+  font-weight: 400;
+ }
+
+ div.box2 h4{
+  font-family: "Comic Neue", sans-serif;
+  font-size: 15px;
+  margin: 20px;
+  color: #fff;
+  font-weight: 400;
+ }
+ 
+.box1{
+   
+    min-height: 60vh;
+    text-align: center;
+}
+
+.preloader{
+    position: relative;
+    top: 200px;
+    right: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .wrapper{
+    position: absolute;
+    top: -35px;
+    transform: scale(1.5);
+  }
+  .loader{
+    height: 25px;
+   width: 1px;
+   position: absolute;
+   animation: rotate 3.5s linear infinite;
+  }
+  .loader .dot{
+    top: 30px;
+   height: 7px;
+   width: 7px;
+   background: #fff;
+   border-radius: 50%;
+   position: relative;
+  }
+  .text{
+    position: absolute;
+    bottom: -85px;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Poppins',sans-serif;
+    color: #fff;
+  }
+  @keyframes rotate {
+    30%{
+      transform: rotate(220deg);
+    }
+    40%{
+    transform: rotate(450deg);
+      opacity: 1;
+   }
+   75%{
+    transform: rotate(720deg);
+    opacity: 1;
+   }
+   76%{
+    opacity: 0;
+   }
+   100%{
+    opacity: 0;
+    transform: rotate(0deg);
+   }
+  }
+  .loader:nth-child(1){
+    animation-delay: 0.15s;
+  }
+  .loader:nth-child(2){
+    animation-delay: 0.3s;
+  }
+  .loader:nth-child(3){
+    animation-delay: 0.45s;
+  }
+  .loader:nth-child(4){
+    animation-delay: 0.6s;
+  }
+  .loader:nth-child(5){
+    animation-delay: 0.75s;
+  }
+  .loader:nth-child(6){
+    animation-delay: 0.9s;
+  }
+
+  div.box3 div.dots{
+    display: flex;
+    float: right;
+    position: relative;
+    top: 30%;
+    right: 60px;
+    color: #fff;
+    font-size: 35px;
+
+  }
+
+  div.box3 div.loadingText{
+    display: flex;
+    float: right;
+    position: relative;
+    top: 35%;
+    right: 350px;
+    color: #fff;
+    font-size: 35px;
+    font-family: 'Comic Neue', cursive;
+  }
+  
+  
+  div.dot1{
+    animation: dot1 1s infinite;
+  }
+
+  div.dot2{
+    animation: dot2 3s infinite;
+  }
+
+
+  div.dot3{
+    animation: dot3 0.7s infinite;
+  }
+
+  div.dot4{
+    animation: dot4 2s infinite;
+  }
+
+  div.dot5{
+    animation: dot5 1.5s infinite;
+  }
+
+  @keyframes dot1{
+    20%{
+      font-size: 40px;
+    }
+    50%{
+      font-size: 45px;
+    }
+
+    75%{
+      font-size: 50px;
+    }
+
+    80%{
+      font-size: 35px;
+    }
+    100%{
+      font-size: 40px;
+    }
+  }
+
+  @keyframes dot2{
+    20%{
+      font-size: 37px;
+    }
+    50%{
+      font-size: 45px;
+    }
+
+    75%{
+      font-size: 52px;
+    }
+
+    80%{
+      font-size: 35px;
+    }
+    100%{
+      font-size: 40px;
+    }
+  }
+
+  @keyframes dot3{
+    20%{
+      font-size: 40px;
+    }
+    50%{
+      font-size: 45px;
+    }
+
+    75%{
+      font-size: 50px;
+    }
+
+    80%{
+      font-size: 35px;
+    }
+    100%{
+      font-size: 40px;
+    }
+  }
+
+  @keyframes dot4{
+    20%{
+      font-size: 40px;
+    }
+    50%{
+      font-size: 45px;
+    }
+
+    75%{
+      font-size: 50px;
+    }
+
+    80%{
+      font-size: 35px;
+    }
+    100%{
+      font-size: 40px;
+    }
+  }
+
+
+  @keyframes dot5{
+    20%{
+      font-size: 40px;
+    }
+    50%{
+      font-size: 45px;
+    }
+
+    75%{
+      font-size: 50px;
+    }
+
+    80%{
+      font-size: 35px;
+    }
+    100%{
+      font-size: 40px;
+    }
+  }

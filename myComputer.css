@@ -1,0 +1,207 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap');
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.adress{
+    width: 100%;
+    height: 40px;
+    background: white;
+    position: absolute;
+    top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+input[type = "text"]{
+    width: 500px;
+    height: 35px;
+  padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border-style: rgb(0, 68, 99);
+    position: relative;
+    top: 1px;
+}
+
+.adressH6{
+    color: lightgreen;
+     font-family: "Montserrat", sans-serif; 
+    padding: 20px;
+}
+
+.fa-share::before{
+    content: '\f064';
+    font-family: "Font Awesome 5 Free";
+    color: #13e856;
+    position: relative;
+    left: 50px;
+    top: 3.5px;
+}
+
+.fa-question-circle::before{
+    content: '\f059';
+    font-family: "Font Awesome 5 Free";
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.mainContent{
+    height: 500px;
+    width: 100%;
+    background: linear-gradient(to top right, #fffb8f, #f2fa89);
+    padding: 20px 0px 0px 0px;
+}
+
+.mainDescription{
+    width: 250px;
+    height: 300px;
+    background: wheat;
+    z-index: -1;
+    margin: 15px 10px 10px 20px;
+    border-radius: 10px;
+}
+
+.mainDescription h2{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    padding: 15px 15px 10px 25px;
+}
+
+.mainDescription h4{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    padding: 15px 15px 10px 25px;
+}
+
+.mainImages{
+    margin: 5px 15px 5px 25px;
+    width: 10%;
+    height: 100px;
+    background: #bac70c;
+    position: relative;
+    left: 290px;
+    bottom: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainSystem{
+    margin: 5px 15px 5px 25px;
+    width: 10%;
+    height: 100px;
+    background: #bac70c;
+    position: relative;
+    left: 290px;
+    bottom: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-server::before{
+    content: '\f233';
+    font-family: "Font Awesome 5 Free";
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+.MyComputer{
+    width: 100%;
+}
+
+.navigation{
+    width: 100%;
+    height: 60px;
+    background: darkblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fa-search::before{
+    content: '\f002';
+    font-family: "Font Awesome 5 Free";
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+.navigation span{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.fa-folder::before{
+    content: '\f07b';
+    font-family: "Font Awesome 5 Free";
+  color: white;
+ cursor: pointer;  
+  font-size: 25px;
+}
+
+.fa-cogs::before{
+    content: '\f085';
+    font-family: "Font Awesome 5 Free";
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.mainImages h3{
+    color: white;
+    font-size: 17px;
+    font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  position: relative;
+  left: -13px;
+}
+
+.mainSystem h3{
+    color: white;
+    font-size: 17px;
+    font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  position: relative;
+  left: -13px;
+}
+
+.mainImages i{
+    position: relative;
+    left: 30px;
+    padding-bottom: 50px;
+}
+
+.mainSystem i{
+    position: relative;
+    left: 55px;
+    padding-bottom: 50px;
+}
+
+.mainImages{
+    border-radius: 5px;
+}
+
+.mainSystem{
+    border-radius: 5px;
+}
+
+.imageDesignBottomRight{
+    opacity: 0.5;
+    position: relative;
+    top: -250px;
+    left: 1275px;
+    
+}

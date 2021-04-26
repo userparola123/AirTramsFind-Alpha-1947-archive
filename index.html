@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="maze.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+   <link rel="stylesheet" type="text/css" href="dog.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enciclopedie</title>
+    <script src="snake.js" defer type="module"></script>
+<script src="food.js" defer type="module"></script>
+<script src="grid.js" defer type="module"></script>
+<script src="input.js" defer type="module"></script>
+<script src="game.js" defer type="module"></script>
+</head>
+<body>
+
+
+
+<header class="header">
+  
+  <div class="homeButton"><i class="fa fa-home"></i></div>
+    <div class="helpButton"><i class="fas fa-question-circle"></i></div>
+
+</header>
+
+  <br><br><br>
+
+<!-- Snake game Copyright 2020 - 2021 AirTramsFind 0.2 Alpha 2 / 3 Release with help of Web Dev Simplified Youtube Channel-->
+
+
+  <div id="snakeGame">
+
+    <div id="mydiv1">
+        
+      <div id="mydivheader"><i class="fa fa-times" aria-hidden="true"  onclick="closeWindowSnakeGame()" id="closeIcon"></i></div>
+
+<div id="game-board"></div>
+
+     </div>
+     </div>
+     
+
+  <!--Maze game Copyright 2020 - 2021 AirTramsFind 0.2 Alpha 2 / 3 release with help of CODEPEN-->
+
+  <div id="mazeGame">
+
+    <div id="mydiv">
+        
+      <div id="mydivheader"><i class="fa fa-times" aria-hidden="true"  onclick="closeWindowMazeGame()" id="closeIcon"></i></div>
+      <section class="wrapper" oncontextmenu="return false" id="wrapperMovingContainer">
+
+        <section class="mobile">
+          <span class="line title">The maze</span>
+          <span class="line">I'm very sorry but this game is for non-touch screen only</span>
+        </section>
+      
+        
+      
+        <section class="game">
+          <input type="checkbox" class="step" id="maze--1"/>
+          <section class="maze maze--1">
+            
+            <section class="path path--1"></section>
+      
+            <section class="path path--finish"></section>
+      
+            <section class="path path--end"></section>
+      
+            <section class="finish">
+              <span class="line">Good job</span>
+              <span class="line">Le'ts see you on the <label for="maze--1">next level</label></span>
+            </section>
+      
+            <section class="gameover">
+              <span class="line">To finish this game, the mouse cursor should stay on the path</span>
+              <span class="line">You lose!</span>
+            </section>
+          </section>
+      
+          <input type="checkbox" class="step" id="maze--2"/>
+          <section class="maze maze--2">
+            
+            <section class="path path--1"></section>
+      
+            <section class="path path--2"></section>
+      
+            <section class="path path--3"></section>
+      
+            <section class="path path--4"></section>
+      
+            <section class="path path--5"></section>
+      
+            <section class="path path--finish"></section>
+      
+            <section class="path path--end"></section>
+      
+            <section class="finish">
+              <span class="line">Good job</span>
+              <span class="line">Le'ts see you on the <label for="maze--2">next level</label></span>
+            </section>
+      
+            <section class="gameover">
+              <span class="line">To finish this game, the mouse cursor should stay on the path</span>
+              <span class="line">You lose!</span>
+            </section>
+          </section>
+      
+          <input type="checkbox" class="step" id="maze--3"/>
+          <section class="maze maze--3">
+            
+            <section class="path path--1"></section>
+      
+            <section class="path path--2"></section>
+      
+            <section class="path path--3"></section>
+      
+            <section class="path path--4"></section>
+      
+            <section class="path path--5"></section>
+      
+            <section class="path path--6"></section>
+      
+            <section class="path path--7"></section>
+      
+            <section class="path path--finish"></section>
+      
+            <section class="path path--end"></section>
+      
+            <section class="finish">
+              <span class="line">Good job</span>
+              <span class="line">Le'ts see you on the <label for="maze--3">next level</label></span>
+            </section>
+      
+            <section class="gameover">
+              <span class="line">To finish this game, the mouse cursor should stay on the path</span>
+              <span class="line">You lose!</span>
+            </section>
+          </section>
+      
+          <input type="checkbox" class="step" id="maze--4"/>
+          <section class="maze maze--4">
+            
+            <section class="path path--1"></section>
+      
+            <section class="path path--2"></section>
+      
+            <section class="path path--3"></section>
+      
+            <section class="path path--4"></section>
+      
+            <section class="path path--5"></section>
+      
+            <section class="path path--finish"></section>
+      
+            <section class="path path--end"></section>
+      
+            <section class="finish">
+              <span class="line">Good job</span>
+              <span class="line">Le'ts see you on the <label for="maze--4">next level</label></span>
+            </section>
+      
+            <section class="gameover">
+              <span class="line">To finish this game, the mouse cursor should stay on the path</span>
+              <span class="line">You lose!</span>
+            </section>
+          </section>
+      
+          <input type="checkbox" class="step" id="maze--5"/>
+          <section class="maze maze--5">
+            
+            <section class="path path--1"></section>
+      
+            <section class="path path--2"></section>
+      
+            <section class="path path--3"></section>
+      
+            <section class="path path--4"></section>
+      
+            <section class="path path--5"></section>
+      
+            <section class="path path--finish"></section>
+      
+            <section class="finish">
+              <span class="line">Good job</span>
+              <span class="line">You made it till the end</span>
+             </section>
+      
+            <section class="gameover">
+              <span class="line">To finish this game, the mouse cursor should stay on the path</span>
+              <span class="line">You lose!</span>
+            </section>
+          </section>
+        </section>
+      
+        
+      </section>
+    </div>
+    
+    </div>
+
+
+
+
+    <!--Modals for articles Copyright 2020 - 2021 AirTramsFind-->
+
+
+   
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images-content/windows-xp-logo.jpg" class="image-modal">
+    <div class="tagMarks"></div>
+    <h1 class="imageHeading">Windows XP are incă mai mulți utilizatori decât Windows 8, Vista și Chrome OS!</h1>
+    <p>Îndrăgitul Windows XP a avut suportul încheiat în 2014 de Microsoft, 
+      ceea ce înseamnă că a fost neglijat în cadrul companiei și nu a primit aproape nicio actualizare – cu excepția cazurilor de securitate foarte grave, cum ar fi cazul ransomware-ului WannaCry.
+       Cea mai recentă versiune a platformei care a primit încă o formă de atenție din partea companiei nu a mai vizat consumatorul mediu și a pierdut acest privilegiu în 2019. </p>
+<p>Cu toate acestea, o cotă foarte mare din piață încă insistă asupra sistemului de operare întârziat, 
+  după cum se arată în datele din august 2020 de la NetMarketShare. 
+  Conform raportului, 1,26% din computerele active din lume folosesc Windows XP – 
+  mai mult decât Ubuntu (1,08%), Windows 8 (0,57%), Windows Vista (0,12%) și chiar și cele moderne versiuni de ChromeOS (0,42%). </p>
+  <p>Windows 10 (56,42%) și Windows 7 (26,03%) rămân cele mai populare, 
+    Windows 7 ajungând și la data de expirare acum în 2020. Mac OS X 10,15 (3,49%)
+    este versiunea sistemului Apple cel mai bine poziționată în clasament. </p>
+
+
+  </div>
+
+</div>  
+
+    <!--  End-->
+  
+
+<!-- Start Menu AirTramsFind -->
+
+<div class="startMenu" id="startMenu">
+  <div class="closeButton"><i class="fa fa-times-circle" id="closeButton"></i></div>
+  <div class="imageHoverIcons"></div>
+  <div class="importantMenu">
+  </div>
+  <div class="contentNormalMenu">
+      <h5 class="computer">Computerul meu</h5>
+      <br>
+      <h5 onclick="openWindowMazeGame()" class="mazeGame">Jocul Maze</h5>
+      <br>
+      <h5 onclick="openWindowSnakeGame()" class="snakeGame">Șarpe</h5>
+  </div>
+</div>
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- Copyright AirTramsFind 0.2 Alpha 2 / 3 release ---  DOG -->
+
+<div class="container">
+  <div class="corgi" id="corgi">
+
+    <div class="head">
+      <div class="ear ear--r"></div>
+      <div class="ear ear--l"></div>
+
+      <div class="eye eye--left"></div>
+      <div class="eye eye--right"></div>
+
+      <div class="face">
+        <div class="face__white">
+          <div class=" face__orange face__orange--l"></div>
+          <div class=" face__orange face__orange--r"></div>
+        </div>
+      </div>
+
+      <div class="face__curve"></div>
+
+      <div class="mouth">
+
+        <div class="nose"></div>
+        <div class="mouth__left">
+          <div class="mouth__left--round"></div>
+          <div class="mouth__left--sharp"></div>
+        </div>
+        
+        <div class="lowerjaw">
+          <div class="lips"></div>
+          <div class="tongue test"></div>
+        </div>
+
+        <div class="snout"></div>
+      </div>
+    </div>
+    
+    <div class="neck__back"></div>
+    <div class="neck__front"></div>
+
+    <div class="body">
+      <div class="body__chest"></div>
+    </div>
+
+    <div class="foot foot__left foot__front foot__1"></div>
+    <div class="foot foot__right foot__front foot__2"></div>
+    <div class="foot foot__left foot__back foot__3"></div>
+    <div class="foot foot__right foot__back foot__4"></div>
+
+    <div class="tail test"></div>
+  </div>
+</div>
+
+
+<div class="mainInputContainer">
+  <input type="text" id="myInput" placeholder="Search..." class="mainInput">
+  <button class="inputButton" onclick="search()"><i class="fa fa-arrow-right"></i></button>
+  
+</div>
+
+<!--  Taskbar AirTramsFind-->
+
+<div class="sidebar">
+  <div class="logo-img">
+<img src="logo-airtramsfind.png" class="logo">
+  </div>
+  <nav>
+<ul>
+  <li>
+    <a href="#" class="startMenuButton">
+      <i class="fas fa-cog"></i>
+      <p>Start Menu</p>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <i class="fas fa-moon"></i>
+      <p>Dark Mode</p>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <i class="fas fa-question-circle"></i>
+      <p>Help and Support Center</p>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <i class="fas fa-info-circle"></i>
+      <p>Troubleshooter</p>
+    </a>
+  </li>
+</ul>
+  </nav>
+</div>
+  
+
+  <div class="brunoMessage" id="brunoMessage">
+    <h1>Am găsit niște lucruri interesante. Sunt bune?</h1>
+    <h3 id="brunoSearchResult"><details class="searchSummary" id="searchSummary">
+      <summary><strong>Aici</strong></summary>
+      <ul id="myUL">
+        <li><a href="#" id="myBtn">Windows XP are incă mai mulți utilizatori decât Windows 8, Vista și Chrome OS!</a></li>
+        <li><a href="#">Agnes</a></li>
+      
+        <li><a href="#">Billy</a></li>
+        <li><a href="#">Bob</a></li>
+      
+        <li><a href="#">Calvin</a></li>
+        <li><a href="#">Christina</a></li>
+        <li><a href="#">Cindy</a></li>
+      </ul>
+      
+      </details></h3>
+  </div>
+ 
+  
+</section>
+</body>
+
+<script src="index.js"></script>
+
+</html>

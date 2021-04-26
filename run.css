@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.startMenu{
+    
+    background: linear-gradient(to top left,  #09c3e8 30%,#09bfe8 100%);
+    width: 400px;
+    height: 500px;
+    position: relative;
+    top: 150px;
+    float: right;
+    border-top-left-radius: 25px;
+    display: none;
+
+}
+
+.startButton{
+  width: 100px;
+  height: 100px;
+    background: olive;
+    border-top-right-radius: 1px;
+  border-bottom-right-radius: 100px;
+cursor: pointer;
+}
+
+.importantMenu{
+    background-color: red;
+    position: relative;
+    width: 150px;
+    height: 350px;
+    margin: 20px;
+    border-radius: 10px;
+    top: 50px;
+}
+
+.contentNormalMenu{
+
+    position: relative;
+    width: 200px;
+    height: 350px;
+    margin: 20px;
+    border-radius: 10px;
+    top: -375px;
+    float: right;
+}
+
+h5{
+    text-align: center;
+    font-size: 21px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: white;
+}
